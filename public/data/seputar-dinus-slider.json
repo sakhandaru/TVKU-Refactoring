@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "id_slides_title": 1,
+      "link": "#",
+      "thumbnail": "/images/fotogedung.jpg",
+      "teks": "Tim Robotik Udinus Juara 1 Tingkat Nasional"
+    },
+    {
+      "id": 2,
+      "id_slides_title": 1,
+      "link": "#",
+      "thumbnail": "/images/fotogedung.jpg",
+      "teks": "Mahasiswa DKV Raih Penghargaan Desain Poster Internasional"
+    },
+    {
+      "id": 3,
+      "id_slides_title": 2,
+      "link": "#",
+      "thumbnail": "/images/fotogedung.jpg",
+      "teks": "Webinar Nasional: Masa Depan AI di Indonesia"
+    },
+    {
+      "id": 4,
+      "id_slides_title": 2,
+      "link": "#",
+      "thumbnail": "/images/fotogedung.jpg",
+      "teks": "Udinus Career Fair 2024 Hadirkan 50 Perusahaan Ternama"
+    }
+  ]
+}

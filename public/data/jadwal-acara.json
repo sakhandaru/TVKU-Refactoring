@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "id_hari": 1,
+      "jam_awal": "08:00",
+      "jam_akhir": "09:00",
+      "acara": "Semangat Pagi",
+      "link": "#",
+      "uploader": 1,
+      "waktu": "2024-02-02 08:00:00",
+      "hari": {
+        "id": 1,
+        "hari": "Senin"
+      }
+    },
+    {
+      "id": 2,
+      "id_hari": 1,
+      "jam_awal": "09:00",
+      "jam_akhir": "10:00",
+      "acara": "Berita Terkini",
+      "link": "#",
+      "uploader": 1,
+      "waktu": "2024-02-02 09:00:00",
+      "hari": {
+        "id": 1,
+        "hari": "Senin"
+      }
+    },
+    {
+      "id": 3,
+      "id_hari": 1,
+      "jam_awal": "10:00",
+      "jam_akhir": "11:00",
+      "acara": "Musik Hits",
+      "link": "#",
+      "uploader": 1,
+      "waktu": "2024-02-02 10:00:00",
+      "hari": {
+        "id": 1,
+        "hari": "Senin"
+      }
+    },
+    {
+      "id": 4,
+      "id_hari": 1,
+      "jam_awal": "11:00",
+      "jam_akhir": "12:00",
+      "acara": "Kuliner Nusantara",
+      "link": "#",
+      "uploader": 1,
+      "waktu": "2024-02-02 11:00:00",
+      "hari": {
+        "id": 1,
+        "hari": "Senin"
+      }
+    },
+    {
+      "id": 5,
+      "id_hari": 1,
+      "jam_awal": "12:00",
+      "jam_akhir": "13:00",
+      "acara": "Seputar Kampus",
+      "link": "#",
+      "uploader": 1,
+      "waktu": "2024-02-02 12:00:00",
+      "hari": {
+        "id": 1,
+        "hari": "Senin"
+      }
+    }
+  ]
+}

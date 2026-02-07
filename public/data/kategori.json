@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id_kategori": 1,
+      "nama": "Teknologi",
+      "slug": "teknologi",
+      "top_nav": "1",
+      "urutan": 1
+    },
+    {
+      "id_kategori": 2,
+      "nama": "Budaya",
+      "slug": "budaya",
+      "top_nav": "1",
+      "urutan": 2
+    },
+    {
+      "id_kategori": 3,
+      "nama": "Pendidikan",
+      "slug": "pendidikan",
+      "top_nav": "1",
+      "urutan": 3
+    },
+    {
+      "id_kategori": 4,
+      "nama": "Lifestyle",
+      "slug": "lifestyle",
+      "top_nav": "1",
+      "urutan": 4
+    },
+    {
+      "id_kategori": 5,
+      "nama": "Kesehatan",
+      "slug": "kesehatan",
+      "top_nav": "1",
+      "urutan": 5
+    }
+  ]
+}

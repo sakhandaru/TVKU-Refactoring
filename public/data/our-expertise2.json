@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "thumbnail": "https://images.unsplash.com/photo-1542621334-a254cf47733d?q=80&w=2069&auto=format&fit=crop",
+      "judul": "Post Production"
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Event Coverage"
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Digital Marketing"
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Content Strategy"
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://images.unsplash.com/photo-1555529733-0e67f56337d1?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Talent Management"
+    }
+  ]
+}

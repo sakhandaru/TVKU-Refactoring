@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "thumbnail": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1925&auto=format&fit=crop",
+      "judul": "Cinematic Universe: Behind The Scene",
+      "deskripsi": "Mengupas tuntas proses kreatif di balik layar film-film blockbuster dunia. Mulai dari efek visual hingga penulisan skrip yang mendalam."
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Expedition: Hidden Java",
+      "deskripsi": "Petualangan menelusuri keindahan alam tersembunyi di pulau Jawa, dari puncak gunung berapi hingga gua-gua bawah tanah yang menakjubkan."
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Street Food Hunter: Semarang Edition",
+      "deskripsi": "Berburu kuliner jalanan legendaris di Semarang. Rasakan sensasi rasa autentik yang telah bertahan selama puluhan tahun."
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Tech Talk: Future Science",
+      "deskripsi": "Diskusi mendalam tentang teknologi masa depan, AI, dan eksplorasi luar angkasa bersama para ilmuwan terkemuka Indonesia."
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Indie Music Stage",
+      "deskripsi": "Panggung eksklusif bagi musisi indie lokal untuk unjuk gigi. Menampilkan genre folk, pop, hingga elektronik eksperimental."
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop",
+      "judul": "The Art of Coffee",
+      "deskripsi": "Dokumenter tentang perjalanan biji kopi dari petani hingga ke cangkir Anda. Menjelajahi budaya kopi yang sedang berkembang pesat."
+    },
+    {
+      "id": 7,
+      "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
+      "judul": "Digital Creative Awards 2025",
+      "deskripsi": "Ajang penghargaan bergengsi bagi para kreator konten digital paling berpengaruh tahun ini. Siaran langsung malam penganugerahan."
+    }
+  ]
+}

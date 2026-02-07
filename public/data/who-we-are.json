@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "judul": "Televisi Kampus Udinus",
+      "deskripsi": "Stasiun televisi yang memiliki nilai strategis dalam rangka turut serta dalam mencerdaskan kehidupan bangsa dan memberikan alternatif solusi atas berbagai permasalahan di masyarakat melalui program-program siaran yang berkualitas dan tepat sasaran. Mengingat, hingga saat ini belum ada program pendidikan yang layak sehingga keberadaan stasiun televisi pendidikan sangat dibutuhkan. Pada tanggal 13 September 2003, Surat Keputusan Gubernur Jawa Tengah No. 483/116/2003 telah diperbarui pada tanggal 8 Februari 2005 dengan No. 483/12A/2005, secara resmi mendapatkan izin untuk membangun stasiun televisi pendidikan yang dikelola oleh PT. Televisi kampus Universitas Dian Nuswantoro dikenal dengan TVKU.",
+      "gambar": "/images/fotogedung.jpg",
+      "motto1": "WE ARE PASSIONATE",
+      "motto1sub": "TVKU menjadi televisi lokal yang berdaya dan memberdayakan",
+      "motto2": "HONEST DEPENDABLE",
+      "motto2sub": "Menumbuhkembangkan ilmu pengetahuan dan menyegarkan bangsa melalui media audio visual",
+      "motto3": "ALWAYS IMPROVING",
+      "motto3sub": "Meningkatkan kesejahteraan warga dengan meningkatkan pengetahuan teoritis dan keterampilan praktis dan diterapkan melalui program siaran"
+    }
+  ]
+}
