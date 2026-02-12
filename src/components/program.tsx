@@ -60,6 +60,7 @@ export const Program = () => {
                     src={program.thumbnail}
                     alt={program.judul}
                     fill
+                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                     priority={program.id === programs[0]?.id}
                   />
