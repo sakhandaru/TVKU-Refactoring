@@ -1,0 +1,53 @@
+
+> frontend-tvku@0.1.0 build
+> next build
+
+   ▲ Next.js 15.3.1
+   - Environments: .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2000ms
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./src/app/liveStream/page.tsx
+2:10  Error: 'BroadcastHero' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/about.tsx
+4:10  Error: 'Lightbulb' is defined but never used.  @typescript-eslint/no-unused-vars
+4:21  Error: 'GraduationCap' is defined but never used.  @typescript-eslint/no-unused-vars
+4:36  Error: 'Tv' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/carouselCompanyLogo.tsx
+5:10  Error: 'ChevronLeft' is defined but never used.  @typescript-eslint/no-unused-vars
+5:23  Error: 'ChevronRight' is defined but never used.  @typescript-eslint/no-unused-vars
+6:10  Error: 'Navigation' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/homePage.tsx
+7:8  Error: 'Schedule' is defined but never used.  @typescript-eslint/no-unused-vars
+64:9  Error: 'featuredNews' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/iklanPosisi.tsx
+18:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/navbar.tsx
+9:10  Error: 'cn' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/newsCard.tsx
+4:10  Error: 'cn' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/seputarUdinus/ProgramCard.tsx
+11:53  Error: 'description' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/seputarUdinus.tsx
+23:9  Error: 'BASE_URL' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+38:32  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+41:33  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+44:32  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/ui/BroadcastHero.tsx
+3:10  Error: 'motion' is defined but never used.  @typescript-eslint/no-unused-vars
+6:8  Error: 'Link' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules

@@ -79,9 +79,9 @@ export const Program = () => {
                     <span className="inline-block px-2 py-1 mb-2 text-[10px] font-bold uppercase tracking-widest bg-white/20 backdrop-blur-sm rounded-none border border-white/10">
                       Show
                     </span>
-                    <h4 className="font-bold text-xl md:text-2xl leading-tight mb-1 line-clamp-2">
+                    <h3 className="font-bold text-xl md:text-2xl leading-tight mb-1 line-clamp-2">
                       {program.judul}
-                    </h4>
+                    </h3>
                     <p className="text-sm text-neutral-300 line-clamp-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                       {program.deskripsi}
                     </p>

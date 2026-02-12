@@ -4,7 +4,7 @@ import { About } from "@/components/about";
 import { CarouselCompanyLogo } from "@/components/carouselCompanyLogo";
 import { OurExpertise } from "@/components/ourExpertise";
 import { Program } from "@/components/program";
-import Schedule from "@/components/schedule";
+
 import { fetchWithFallback } from "@/lib/fetchWithFallback";
 import { useEffect, useState } from "react";
 import { ImmersiveHero } from "@/components/ui/ImmersiveHero";
@@ -61,7 +61,6 @@ export default function HomePage() {
     return null;
   }
 
-  const featuredNews = newsdatas[0];
   const latestNews = newsdatas.slice(1, 6);
 
   return (

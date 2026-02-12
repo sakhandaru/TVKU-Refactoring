@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 interface NewsCardProps {
   cover: string;

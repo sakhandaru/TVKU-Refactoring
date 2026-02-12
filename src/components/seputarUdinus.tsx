@@ -20,8 +20,6 @@ const SeputarUdinus = () => {
   const [titles, setTitles] = useState<Title[]>([]);
   const [items, setItems] = useState<Item[]>([]);
 
-  const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "";
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -34,14 +32,10 @@ const SeputarUdinus = () => {
           "/data/seputar-dinus-extracted.json",
         );
         // Direct array check if fallback returns array directly or wrapped
-        if (Array.isArray(resItems)) {
-          setItems(resItems as any);
-        } else if (resItems.data) {
-          // If structure matches { data: [...] }
-          setItems((resItems as any).data || resItems);
+        if (resItems.data && Array.isArray(resItems.data.data)) {
+          setItems(resItems.data.data);
         } else {
-          // Fallback if it returns just the array (fetchWithFallback logic dependent)
-          setItems(resItems as any);
+          setItems([]);
         }
       } catch (err) {
         console.error("Error fetching data:", err);

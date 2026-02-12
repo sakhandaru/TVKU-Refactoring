@@ -27,7 +27,7 @@ export const apiService = {
   getBeritaDetail: async (slug: string) => {
     return await fetchWithFallback(
       `${API_BASE_URL}/berita/${slug}`,
-      null // Belum ada dummy spesifik, atau bisa arahkan ke general
+      "/data/berita.json" // Fallback to general news if specific detail fails
     );
   },
 
@@ -47,7 +47,7 @@ export const apiService = {
   getSchedule: async () => {
     return await fetchWithFallback(
       `${API_BASE_URL}/jadwal`,
-      null
+      "/data/schedule.json"
     );
   },
 };

@@ -2,8 +2,7 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 export const CarouselCompanyLogo = () => {

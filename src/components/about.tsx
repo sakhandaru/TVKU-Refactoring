@@ -1,7 +1,6 @@
 "use client";
 import { fetchWithFallback } from "@/lib/fetchWithFallback";
 // Card component removed
-import { Lightbulb, GraduationCap, Tv } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -103,9 +102,9 @@ export const About = () => {
               <span className="block text-6xl font-bold text-blue-500 mb-6">
                 1.
               </span>
-              <h4 className="text-2xl font-bold text-neutral-900 mb-3 tracking-tight uppercase">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-3 tracking-tight uppercase">
                 {about.motto1}
-              </h4>
+              </h3>
               <p className="text-sm text-neutral-500 leading-relaxed font-medium">
                 {about.motto1sub}
               </p>
@@ -116,9 +115,9 @@ export const About = () => {
               <span className="block text-6xl font-bold text-blue-500 mb-6">
                 2.
               </span>
-              <h4 className="text-2xl font-bold text-neutral-900 mb-3 tracking-tight uppercase">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-3 tracking-tight uppercase">
                 {about.motto2}
-              </h4>
+              </h3>
               <p className="text-sm text-neutral-500 leading-relaxed font-medium">
                 {about.motto2sub}
               </p>
@@ -129,9 +128,9 @@ export const About = () => {
               <span className="block text-6xl font-bold text-blue-500 mb-6">
                 3.
               </span>
-              <h4 className="text-2xl font-bold text-neutral-900 mb-3 tracking-tight uppercase">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-3 tracking-tight uppercase">
                 {about.motto3}
-              </h4>
+              </h3>
               <p className="text-sm text-neutral-500 leading-relaxed font-medium">
                 {about.motto3sub}
               </p>

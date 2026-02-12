@@ -17,7 +17,7 @@ export async function fetchWithFallback<T>(
   fallbackPath: string
 ): Promise<FetchResult<T>> {
   try {
-    const response = await axios.get<T>(url, { timeout: 1000 }); // Reduced timeout for faster dev
+    const response = await axios.get<T>(url, { timeout: 300 }); // Reduced timeout for faster dev (was 1000)
     
     // Axios throws on 4xx/5xx by default, so we usually land here only on 2xx
     // But we double check data validity if needed.
