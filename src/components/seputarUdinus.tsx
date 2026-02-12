@@ -26,14 +26,14 @@ const SeputarUdinus = () => {
         // Mock Title for now or fetch if needed, but we used extracted data for items
         setTitles([{ id: 1, judul: "Berita Terkini" }]);
 
-        const resItems = await fetchWithFallback<{ data: Item[] }>(
+        const resItems = await fetchWithFallback<Item[]>(
           // Prefer local extracted data
           "/data/seputar-dinus-extracted.json",
           "/data/seputar-dinus-extracted.json",
         );
-        // Direct array check if fallback returns array directly or wrapped
-        if (resItems.data && Array.isArray(resItems.data.data)) {
-          setItems(resItems.data.data);
+
+        if (resItems.data && Array.isArray(resItems.data)) {
+          setItems(resItems.data);
         } else {
           setItems([]);
         }
