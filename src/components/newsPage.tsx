@@ -87,20 +87,7 @@ function NewsPage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-screen bg-neutral-50">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
-          <p className="text-neutral-500 font-medium tracking-wide text-sm">
-            LOADING CONTENT
-          </p>
-        </div>
-      </div>
-    );
-  }
-
-  if (!apiData || !apiData.data.length) {
+  if (!loading && (!apiData || !apiData.data.length)) {
     return (
       <div className="flex justify-center items-center h-screen text-neutral-500">
         No news data available
@@ -108,7 +95,8 @@ function NewsPage() {
     );
   }
 
-  const { data: beritaData, last_page } = apiData;
+  const beritaData = apiData?.data || [];
+  const last_page = apiData?.last_page || 1;
 
   // Simple Pagination Logic (same as before but cleaner code if possible, sticking to original logic for safety)
   const getPaginationItems = () => {
@@ -250,7 +238,20 @@ function NewsPage() {
               Trending Now
             </h2>
           </div>
-          <BentoNewsGrid news={newsData.slice(0, 5)} />
+          {loading ? (
+            <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[300px] gap-4">
+              {[...Array(5)].map((_, i) => (
+                <div
+                  key={i}
+                  className={`bg-neutral-200 animate-pulse rounded-none ${
+                    i === 0 || i === 4 ? "md:col-span-2" : "md:col-span-1"
+                  } ${i === 2 ? "md:row-span-2" : ""}`}
+                />
+              ))}
+            </div>
+          ) : (
+            <BentoNewsGrid news={newsData.slice(0, 5)} />
+          )}
         </div>
 
         {/* All News (MultiTab) */}
@@ -261,7 +262,18 @@ function NewsPage() {
             </h2>
           </div>
 
-          <MultiTabContent categories={kategoriData} newsData={beritaData} />
+          {loading ? (
+            <div className="space-y-4">
+              {[...Array(3)].map((_, i) => (
+                <div
+                  key={i}
+                  className="h-24 bg-neutral-200 animate-pulse w-full rounded-md"
+                />
+              ))}
+            </div>
+          ) : (
+            <MultiTabContent categories={kategoriData} newsData={beritaData} />
+          )}
 
           <div className="mt-16 flex justify-center">
             <Pagination>

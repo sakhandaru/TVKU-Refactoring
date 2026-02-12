@@ -44,6 +44,8 @@ export const ImmersiveHero = ({ slides }: ImmersiveHeroProps) => {
             fill
             className="object-cover"
             priority={true}
+            sizes="100vw"
+            quality={90}
           />
           {/* Subtle overlay */}
           <div className="absolute inset-0 bg-black/10" />

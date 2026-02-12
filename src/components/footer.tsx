@@ -23,7 +23,7 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
-          <p className="leading-relaxed text-neutral-500 max-w-xs">
+          <p className="leading-relaxed text-neutral-600 max-w-xs">
             We growing up your business with personal AI manager. <br />
             &copy; 2025 TVKU.
           </p>
@@ -32,7 +32,7 @@ export default function Footer() {
         {/* Contact Section */}
         <div className="space-y-4">
           <h3 className="text-sm font-semibold text-neutral-900">Contact</h3>
-          <p className="text-neutral-500 leading-relaxed">
+          <p className="text-neutral-600 leading-relaxed">
             Nakula I 5-11, Semarang Tengah, <br />E Building 2nd Floor, UDINUS
           </p>
           <div className="flex flex-col gap-2 mt-2">
@@ -76,19 +76,22 @@ export default function Footer() {
           <div className="flex gap-4">
             <a
               href="#"
-              className="text-neutral-500 hover:text-neutral-900 text-lg transition-colors"
+              aria-label="Facebook"
+              className="text-neutral-600 hover:text-neutral-900 text-lg transition-colors"
             >
               <FaFacebookF />
             </a>
             <a
               href="#"
-              className="text-neutral-500 hover:text-neutral-900 text-lg transition-colors"
+              aria-label="Instagram"
+              className="text-neutral-600 hover:text-neutral-900 text-lg transition-colors"
             >
               <FaInstagram />
             </a>
             <a
               href="#"
-              className="text-neutral-500 hover:text-neutral-900 text-lg transition-colors"
+              aria-label="Youtube"
+              className="text-neutral-600 hover:text-neutral-900 text-lg transition-colors"
             >
               <FaYoutube />
             </a>
@@ -96,7 +99,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container mx-auto mt-6 flex flex-col md:flex-row justify-between items-center text-neutral-400 text-[11px]">
+      <div className="container mx-auto mt-6 flex flex-col md:flex-row justify-between items-center text-neutral-500 text-[11px]">
         <p>Copyright &copy; 2025 TVKU. All rights reserved.</p>
         <div className="flex gap-6 mt-2 md:mt-0">
           <a href="#" className="hover:underline hover:text-neutral-900">

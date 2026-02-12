@@ -19,26 +19,32 @@ interface Item {
 const SeputarUdinus = () => {
   const [titles, setTitles] = useState<Title[]>([]);
   const [items, setItems] = useState<Item[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Mock Title for now or fetch if needed, but we used extracted data for items
         setTitles([{ id: 1, judul: "Berita Terkini" }]);
 
         const resItems = await fetchWithFallback<Item[]>(
-          // Prefer local extracted data
           "/data/seputar-dinus-extracted.json",
           "/data/seputar-dinus-extracted.json",
         );
 
-        if (resItems.data && Array.isArray(resItems.data)) {
-          setItems(resItems.data);
+        if (Array.isArray(resItems)) {
+          setItems(resItems);
+        } else if (
+          (resItems as any).data &&
+          Array.isArray((resItems as any).data)
+        ) {
+          setItems((resItems as any).data);
         } else {
           setItems([]);
         }
       } catch (err) {
         console.error("Error fetching data:", err);
+      } finally {
+        setLoading(false);
       }
     };
     fetchData();
@@ -76,8 +82,16 @@ const SeputarUdinus = () => {
               </div>
 
               <div className="flex overflow-x-auto gap-6 pb-2 scrollbar-hide">
-                {relatedItems.length > 0 ? (
-                  relatedItems.map((item) => (
+                {loading ? (
+                  // Skeleton Loader
+                  [...Array(4)].map((_, i) => (
+                    <div
+                      key={i}
+                      className="min-w-[85vw] md:min-w-[320px] max-w-[85vw] md:max-w-[320px] aspect-video bg-neutral-200 animate-pulse rounded-none border border-neutral-100"
+                    />
+                  ))
+                ) : relatedItems.length > 0 ? (
+                  relatedItems.map((item, index) => (
                     <a
                       key={item.id}
                       href={item.link}
@@ -90,7 +104,9 @@ const SeputarUdinus = () => {
                         alt={item.teks}
                         width={320}
                         height={180}
+                        sizes="(max-width: 768px) 85vw, 320px"
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        priority={index < 2}
                       />
 
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>

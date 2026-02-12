@@ -98,9 +98,9 @@ export const CarouselCompanyLogo = () => {
               <Image
                 src={partner.logo}
                 alt={partner.name}
-                width={200}
-                height={150}
-                className="object-contain w-full h-full max-h-[120px]"
+                fill
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                className="object-contain" // removed max-h constraint to rely on container
               />
             </div>
           </SwiperSlide>

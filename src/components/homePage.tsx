@@ -48,19 +48,6 @@ export default function HomePage() {
     getData();
   }, []);
 
-  if (loading) {
-    return (
-      <div className="h-screen flex items-center justify-center bg-background text-primary font-bold tracking-widest animate-pulse">
-        LOADING...
-      </div>
-    );
-  }
-
-  // Ensure we have at least 1 item
-  if (newsdatas.length === 0) {
-    return null;
-  }
-
   const latestNews = newsdatas.slice(1, 6);
 
   return (
@@ -136,9 +123,26 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <BentoNewsGrid
-          news={latestNews.length > 0 ? latestNews : newsdatas.slice(0, 4)}
-        />
+        {loading ? (
+          <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[300px] gap-4">
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={i}
+                className={`bg-neutral-200 animate-pulse rounded-none ${
+                  i === 0 || i === 4 ? "md:col-span-2" : "md:col-span-1"
+                } ${i === 2 ? "md:row-span-2" : ""}`}
+              />
+            ))}
+          </div>
+        ) : newsdatas.length > 0 ? (
+          <BentoNewsGrid
+            news={latestNews.length > 0 ? latestNews : newsdatas.slice(0, 4)}
+          />
+        ) : (
+          <div className="text-center py-10 text-neutral-500">
+            Failed to load news.
+          </div>
+        )}
       </section>
 
       {/* 4. PROGRAMS (Carousel) */}
